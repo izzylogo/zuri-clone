@@ -1,0 +1,105 @@
+@import '_color.scss';
+
+.hero{
+    background-image: url('../../../assests/zuri-hero-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
+
+    span{
+        color: $hero-red;
+    }
+
+    .hero-cent{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+            span{
+                color: $hero-red;
+            }
+        }
+
+        h1{
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        p{
+            max-width: 660px;
+            line-height: 25px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .h-buttons{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 60px;
+
+            button {
+                padding: 12px 15px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .b1{
+                color: white;
+                background-color: $hero-red;
+                border: 1px solid $hero-red;
+
+                &:hover{
+                    border: 1px solid $hero-red;
+                    color: $hero-red;
+                    background-color: white;
+                }
+            }
+
+            .b2{
+                color: $hero-red;
+                background-color: white;
+                border: 1px solid $hero-red;
+
+                &:hover{
+                    color: white;
+                    background-color: $hero-red;
+                    border: 1px solid $hero-red;   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero{
+        padding-bottom: 100px;
+        .hero-cent{
+            margin-top: 80px;
+            h4{
+                margin-bottom: 60px;
+            }
+            p{
+                padding: 0px 15px;
+            }
+            .h-buttons{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
