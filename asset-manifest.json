@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/zuri-clone/static/css/main.7387f9a0.css",
+    "main.js": "/zuri-clone/static/js/main.701e0e3f.js",
+    "static/media/zuri-hero-bg.svg": "/zuri-clone/static/media/zuri-hero-bg.98d003fe3e3a03182a30.svg",
+    "index.html": "/zuri-clone/index.html",
+    "main.7387f9a0.css.map": "/zuri-clone/static/css/main.7387f9a0.css.map",
+    "main.701e0e3f.js.map": "/zuri-clone/static/js/main.701e0e3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7387f9a0.css",
+    "static/js/main.701e0e3f.js"
+  ]
+}
