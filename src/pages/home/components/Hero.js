@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Hero.scss'
+import {Link}  from "react-router-dom"
 
 const Hero = () => {
   return (
@@ -11,8 +12,8 @@ const Hero = () => {
             immensely successful in creating a global network of a highly adept intelligent workforce 
             that can help your company achieve their mission-critical <span>projects and goals</span></p>
             <div className="h-buttons">
-                <button className="b1">i'm new to the industry</button>
-                <button className="b2">i need industry experience</button>
+                <Link className="b1 button" to='/train'>i'm new to the industry</Link>
+                <Link className="b2 button"  to='/'>i need industry experience</Link>
             </div>
         </div>
     </div>

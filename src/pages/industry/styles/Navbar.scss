@@ -1,0 +1,108 @@
+@import './color';
+
+.navbar{
+    position: fixed;
+    background-color: $peach;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    .nav-contain{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        margin: 0 40px;
+
+        .logo{
+            width: 300px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            li{
+                list-style: none;
+                font-size: 17px;
+                color: $dark;
+            }
+        }
+        .enroll{
+            display: flex;
+            align-items: center;
+            .enroll-img{
+                width: 52px;
+                background-color: $red;
+                padding: 10px;
+                border-radius: 50%;
+            }
+            span{
+                background-color: $red;
+                padding: 10px;
+                padding-right: 25px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                transform: translateX(-10px);
+                color: white;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .navbar{
+        .nav-contain{
+            .logo{
+                width: 270px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .navbar{
+        .nav-contain{
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        .nav-contain{
+            margin: 0 20px;
+            .logo{
+                width: 220px;
+            }
+            .enroll{
+                .enroll-img{
+                    width: 38px;
+                }
+                span{
+                    padding: 5px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        .nav-contain{
+            .logo{
+                width: 150px;
+            }
+            .enroll{
+                .enroll-img{
+                    width: 28px;
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

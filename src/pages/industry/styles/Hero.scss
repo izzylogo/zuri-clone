@@ -1,0 +1,137 @@
+@import './_color';
+
+.in-hero{
+    padding-top: 130px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+    .inhero-contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // padding: 0px 30px;
+        width: 100%;
+        .lady{
+            max-width: 30%;
+            margin-top: 30px;
+        }
+        .content{
+            text-align: center;
+            // width: 50%;
+            .cont{
+                color: $red;
+                margin-bottom: 0px;
+                padding-top: 50px;
+                font-weight: 500;
+                // margin-top: 100px;
+            }
+            h2{
+                font-size: 50px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .lin{
+                transform: translate(125px, -5px);
+                width: 33%;
+            }
+            .bot-cont{
+                font-size: 19px;
+                margin: 0px 90px;
+                margin-bottom: 10px;
+            }
+            .en-btn{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .look{
+                    width: 9%;
+                }
+                button{
+                    background-color: $red;
+                    padding: 15px 40px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    color: white;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+                .wire{
+                    width: 10%;
+                    transform: translate(-300%, 50px);
+                }
+            }
+        }
+        .man{
+            max-width: 25%;
+            margin-top: 30px;
+        }
+    }
+    hr{
+        margin-top: 100px;
+        color: rgba(72, 72, 72, 0.675);
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .in-hero{
+        .inhero-contain{
+            flex-direction: column;
+            width: 100%;
+            .lady{
+                max-width: 1440px !important;
+                width: 90%;
+                // padding-top: 100px;
+            }
+            .content{
+                padding: 0 70px;
+                .bot-cont{
+                    margin: 0px 20px;
+                }
+            }
+            .man{
+                display: none;
+            }
+        }
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .in-hero{
+        .inhero-contain{
+            .content{
+                padding: 0 40px;
+                h2{
+                    font-size: 40px;
+                    color: $dark;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .in-hero{
+        .inhero-contain{
+            .content{
+                padding: 0 12px;
+                .line{
+                    transform: translate(-195px, -50px) !important;
+                }
+                h2{
+                    font-size: 30px;
+                }
+                .en-btn{
+                    .look{
+                        // display: none;
+                        opacity: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
