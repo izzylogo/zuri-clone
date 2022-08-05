@@ -1,5 +1,6 @@
 import React from 'react'
 import Deal from './components/Deal'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
         <Hero/>
         <Deal/>
+        <Footer/>
     </>
   )
 }

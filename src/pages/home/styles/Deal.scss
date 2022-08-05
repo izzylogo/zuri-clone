@@ -1,9 +1,10 @@
 @import '_color.scss';
 
 .deal{
-    margin-top: 180px;
+    margin-top: 100px;
     .h-head{
         text-align: center;
+        margin-bottom: -60px;
         .d-h{
             color: $hero-red;
             font-size: 16px;
@@ -14,10 +15,128 @@
             line-height: 35px;
         }
     }
-    .backimage{
+    .dealCa{
         display: flex;
-        justify-content: space-between;
-        padding: 0px 40px;
-        z-index: 0;
+        justify-content: center;
+        overflow: hidden;
+        .gather{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 10px 30px;
+
+            .d-card{
+                position: relative;
+                margin-top: 100px;
+                .d-topic{
+                    background-color: $peach;
+                    padding: 50px 30px;
+                    max-width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .card-head{
+                        font-weight: bolder;
+                        font-size: 19px;
+                        background-color: white;
+                        padding: 40px 10px;
+                        width: fit-content;
+            
+                        span{
+                            color: $hero-red;
+                        }
+                    }
+                    .para{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #1c1c1c;
+                    }
+                    .card-bot{
+                        color: $hero-red;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+                .left{
+                    position: absolute;
+                    top: -75px;
+                    left: -125px;
+                    z-index: -1;
+                }
+                .right{
+                    position: absolute;
+                    top: -75px;
+                    right: -125px;
+                    z-index: -1;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 1199px) {
+    .dealCa{
+        .gather{
+            .d-card{
+                img{
+                    display: none;
+                }
+            }
+        }
     }
 }
+
+@media screen and (max-width: 991px) {
+    .deal{
+        .h-head{
+            .h-bot{
+                padding: 0px 20px;
+            }
+        }
+        .dealCa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            .gather{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0px;
+                align-items: center;
+                width: 90%;
+                // padding: 0px 90px;
+                .d-card{
+                    width: 100%;
+                    // padding: 0px 100px;
+                    .d-topic{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        max-width: none;
+                        padding: 50px 100px 50px 30px;
+                        // padding-right: 90px;
+                        .para{
+                            padding-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 290px) {
+//     .dealCa{
+//         width: 100%;
+//         .gather{
+//             width: 100%;
+//             .d-card{
+                
+//             }
+//         }
+//     }
+// }

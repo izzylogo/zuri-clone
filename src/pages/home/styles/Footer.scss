@@ -1,0 +1,170 @@
+@import '_color.scss';
+
+.footer{
+    margin-top: 200px;
+    padding: 0px 30px;
+    
+    .f-contain{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 40px;
+        
+        .flex-1{
+
+        }
+        .flex-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                .top{
+                    color: #212121;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                li{
+                    color: $hero-red;
+                    list-style: none;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .flex-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                .top{
+                    color: #212121;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                li{
+                    color: $hero-red;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    &:nth-child(2){
+                        color: #212121;
+                    }
+                }
+            }
+        }
+        .flex-4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+                .top{
+                    color: #212121;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                li{
+                    color: $hero-red;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    
+                    img{
+                        width: 23px;
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        border: 1px solid #212121be;
+    }
+
+    h4{
+        font-size: 17px;
+        color: #212121be;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer{
+        .f-contain{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .flex-1{
+                img{
+                    width: 200px;
+                }
+            }
+            .flex-2{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0px;
+                    li{
+                        text-align: center;
+                        &:nth-child(1){
+                            color: #212121be;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .flex-3{
+                ul{
+                    padding-left: 0px;
+                    display: flex;
+                    align-items: center;
+                    .top{
+                        text-align: center;
+                        color: #212121be;
+                        font-size: 27px;
+                    }
+                    li{
+                        text-align: center;
+                    }
+                }
+            }
+            .flex-4{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    color: #212121be;
+                    font-size: 27px;
+                    margin: 0px;
+                }
+                ul{
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
