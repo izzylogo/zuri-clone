@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/zuri-clone/static/css/main.8f5fc05e.css",
-    "main.js": "/zuri-clone/static/js/main.5f411746.js",
+    "main.css": "/zuri-clone/static/css/main.b2e5a418.css",
+    "main.js": "/zuri-clone/static/js/main.11e6f2e9.js",
+    "static/media/maleface.svg": "/zuri-clone/static/media/maleface.ffbf149ad3d3aceed7e7efc85d0ed619.svg",
+    "static/media/male1.png": "/zuri-clone/static/media/male1.65827e82d9aaeefe1dcb.png",
+    "static/media/lady1.png": "/zuri-clone/static/media/lady1.7dcbe37f258bf596f6bd.png",
+    "static/media/train.logo(1).svg": "/zuri-clone/static/media/train.logo(1).66231ee20c8825641093a2f7873ef11e.svg",
     "static/media/left_1.png": "/zuri-clone/static/media/left_1.0728188bb58e608e9611.png",
     "static/media/right_1.png": "/zuri-clone/static/media/right_1.5d3f168b62a243f8be61.png",
+    "static/media/thumbs.png": "/zuri-clone/static/media/thumbs.025861ce6e78c3bfe06a.png",
     "static/media/zuri-logo-full.svg": "/zuri-clone/static/media/zuri-logo-full.69646180dba126cd1b131bfa03e597b3.svg",
     "static/media/zuri-hero-bg.svg": "/zuri-clone/static/media/zuri-hero-bg.98d003fe3e3a03182a30.svg",
+    "static/media/section1wire.svg": "/zuri-clone/static/media/section1wire.aa9f8594e7513009e550cb54eaf1621f.svg",
+    "static/media/line.svg": "/zuri-clone/static/media/line.7c203e24c10e87cd479d9be8d9ead36f.svg",
     "index.html": "/zuri-clone/index.html",
-    "main.8f5fc05e.css.map": "/zuri-clone/static/css/main.8f5fc05e.css.map",
-    "main.5f411746.js.map": "/zuri-clone/static/js/main.5f411746.js.map"
+    "main.b2e5a418.css.map": "/zuri-clone/static/css/main.b2e5a418.css.map",
+    "main.11e6f2e9.js.map": "/zuri-clone/static/js/main.11e6f2e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f5fc05e.css",
-    "static/js/main.5f411746.js"
+    "static/css/main.b2e5a418.css",
+    "static/js/main.11e6f2e9.js"
   ]
 }
