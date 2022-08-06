@@ -1,0 +1,81 @@
+@import '_color.scss';
+
+.sectionB{
+    padding: 0px 40px;
+    .secB{
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        .top3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec3wire{
+            width: 17%;
+        }
+        .write3{
+            p{
+                color: $red;
+                font-size: 23px;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 42px;
+                color: black;
+            }
+        }
+        .side3{
+            width: 100%;
+            .star{
+                max-width: 65%;
+                transform: translateY(70px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .sectionB{
+        .secB{
+            flex-direction: column;
+            gap: 0px;
+            .top3{
+                .write3{
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .side3{
+                display: none;
+                .star{
+                    max-width: 100px!important;
+                    transform: translateY(0px) !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sectionB{
+        .secB{
+            flex-direction: column;
+            gap: 0px;
+            .top3{
+                .write3{
+                    h2{
+                        font-size: 25px;
+                    }
+                }
+            }
+            .side3{
+                display: none !important;
+            }
+        }
+    }
+}

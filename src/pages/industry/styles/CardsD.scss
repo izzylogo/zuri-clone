@@ -1,0 +1,70 @@
+.card-body{
+    background-color: red;
+    margin-top: 40px;
+    width: fit-content;
+    padding: 50px 48px 93px 50px!important;
+    border-radius: 20px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    transition: 0.6s ease;
+    img{
+        display: flex;
+        float: right;
+        margin-right: -49px;
+        margin-top: -50px;
+        width: 40%;
+    }
+    h1{
+        color: #fff;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        margin: 0px;
+    }
+    h2{
+        color: #fff;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        padding-bottom: 36px;
+        padding-top: 32px;
+        margin: 0px;
+    }
+    p{
+        color: #fff;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 0px;
+    }
+   
+}
+
+.card-body:hover{
+    transform: translateY(-30px);
+}
+
+@media screen and (max-width: 900px) {
+    .card-body{
+        width: 84%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .card-body{
+        width: 76%;
+        padding: 50px 48px 50px 30px!important;
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 18px 0px;
+        }
+    }
+}
