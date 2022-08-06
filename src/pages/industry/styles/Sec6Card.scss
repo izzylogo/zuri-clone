@@ -1,0 +1,55 @@
+@import '_color';
+
+.sec6card{
+    // min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    .sec6con{
+        background: #fff;
+        border-radius: 41px;
+        box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+        padding: 40px!important;
+        display: flex;
+        // gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2{
+            text-align: start;
+            margin-top: 10px;      
+        }
+        
+        .logos{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 19px;
+
+            img{
+                width: 45px;
+                border: none;
+            }
+        }
+        p{
+            margin-bottom: 5px;
+            font-size: 15px;
+            letter-spacing: 0.4px;
+            color: #1c1c1c;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .sec6card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sec6card{
+        grid-template-columns: 1fr;
+    }
+}

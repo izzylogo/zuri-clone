@@ -6,6 +6,7 @@ import SectionA from './components/SectionA'
 import SectionB from './components/SectionB'
 import CardIn from './components/CardIn'
 import Section5 from './components/Section5'
+import Section6 from './components/Section6'
 
 const Industry = () => {
   return (
@@ -16,6 +17,7 @@ const Industry = () => {
         <SectionB />
         <CardIn/>
         <Section5 />
+        <Section6 />
     </div>
   )
 }

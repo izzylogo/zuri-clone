@@ -6,6 +6,7 @@ import hand from '../../../assests/hand.svg'
 import mentor from '../../../assests/mentor.svg'
 import practise from '../../../assests/practice.svg'
 import games from '../../../assests/games.svg'
+import dot from '../../../assests/dotsection5.svg'
 
 const Section5 = () => {
   return (
@@ -41,6 +42,9 @@ const Section5 = () => {
             <div className="right">
                 <img src={woman} alt="" className="woman" />
             </div>
+        </div>
+        <div className="botm-img">
+            <img src={dot} alt="" />
         </div>
     </div>
   )
