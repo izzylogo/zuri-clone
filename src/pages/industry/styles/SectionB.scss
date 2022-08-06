@@ -1,7 +1,7 @@
 @import '_color.scss';
 
 .sectionB{
-    padding: 0px 40px;
+    padding: 0px 60px;
     .secB{
         display: flex;
         // flex-wrap: wrap;
@@ -22,10 +22,12 @@
                 color: $red;
                 font-size: 23px;
                 font-weight: 500;
+                margin-bottom: 0px;
             }
             h2{
                 font-size: 42px;
                 color: black;
+                margin-top: 0px;
             }
         }
         .side3{

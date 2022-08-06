@@ -53,3 +53,19 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .sec6card{
+        .sec6con{
+            width: 80%;
+            padding: 40px !important;
+            margin-left: -20px;
+            .logos{
+                flex-wrap: wrap;
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

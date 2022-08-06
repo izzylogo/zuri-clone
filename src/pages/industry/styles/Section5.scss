@@ -33,7 +33,7 @@
                 margin-bottom: 50px;
             }
             .sec5-enrol{
-                padding: 10px 25px;
+                padding: 17px 25px;
                 background-color: white;
                 border-radius: 30px;
                 border: none;
@@ -60,6 +60,7 @@
                     font-size: 18px;
                     font-weight: 400;
                     color: white;
+                    cursor: not-allowed;
 
                     img{
                         width: 25%;
@@ -103,6 +104,9 @@
             flex-direction: column;
             .left{
                 max-width: 100%;
+                h3{
+                    font-size: 30px;
+                }
                 .sec5grid{
                     grid-template-columns: 1fr 1fr;
                 }

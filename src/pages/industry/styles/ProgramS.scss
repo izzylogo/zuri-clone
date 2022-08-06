@@ -1,0 +1,243 @@
+@import './color';
+
+.programs{
+    .program{
+        padding: 0px 60px;
+        padding-bottom: 80px;
+        .top-ar{
+            margin-left: 15%;
+            margin-top: -10px;
+            img{
+                width: 10%;
+            }
+        }
+        .right-ar{
+            display: flex;
+            justify-content: end;
+            margin-top: -95px;
+            transform: translateX(-100px);
+            img{
+                width: 14%;
+            }
+        }
+        .header{
+            text-align: center;
+            margin-top: -100px;
+            h3{
+                color: $red;
+                letter-spacing: 1px;
+                font-size: 24px;
+                margin-bottom: 0px;
+                font-weight: 500;
+            }
+            h1{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 42px;
+            }
+            p{
+                color: $dark;
+                font-size: 18px;
+            }
+        }
+        .program-card{
+            display: flex;
+            max-width: 100%;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 80px;
+            .move-icon{
+                display: flex;
+                left: 0;
+                margin-top: 19%;
+                position: absolute;
+            }
+            .main-card{
+                background-color: rgb(31, 31, 31);
+                color: white;
+                padding: 25px 45px;
+                border-radius: 55px;
+                width: 33%;
+                position: relative;
+                z-index: 2;
+                h3{
+                    margin-bottom: 0px;
+                }
+                ul{
+                    padding-left: 12px;
+                }
+                .post-program{
+                    p{
+                        margin: 0px;
+                    }
+                }
+                .hour-mg{
+                    display: flex;
+                    float: right;
+                    // margin-right: -1px;
+                    margin-top: -106px;
+                    width: 23%;
+                    img{
+                        // margin-left: 200px;
+                        width: 100%;
+                    }
+                }
+                .tim{
+                    display: flex;
+                    float: right;
+                    margin-right: 19px;
+                    margin-top: -10px;
+                    width: 23%;
+                    img{
+                        // margin-left: 200px;
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .slant{
+        transform: translate(850%, -130px);
+        max-width: 10%;
+        img{
+            max-width: 159px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .programs{
+        .program{
+            .program-card{
+                .move-icon{
+                    img{
+                        display: none;
+                    }
+                }
+                .main-card{
+                    width: 38%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .programs{
+        .program{
+            padding-top: 20px;
+            .right-ar{
+                img{
+                    width: 10%;
+                }
+            }
+            .header{
+                padding-top: 20px;
+            }
+            
+            .program-card{
+                max-width: 100%;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                .move-icon{
+                    img{
+                        display: none;
+                    }
+                }
+                .main-card{
+                    width: 80%;
+                }
+            }
+        }
+        .slant{
+            transform: translate(0%, -130px);
+            max-width: 10%;
+            img{
+                display: none;
+                max-width: 159px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .programs{
+        .program{
+            margin-top: 100px;
+            .top-ar{
+                margin-top: -20px;
+            }
+            .right-ar{
+                // margin-top: 10px;
+                img{
+                    width: 10%;
+                }
+            }
+            .header{
+                padding-top: 20px;
+            }
+            
+            .program-card{
+                max-width: 100%;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                .move-icon{
+                    img{
+                        display: none;
+                    }
+                }
+                .main-card{
+                    width: 80%;
+                }
+            }
+        }
+        .slant{
+            transform: translate(0%, -130px);
+            max-width: 10%;
+            img{
+                display: none;
+                max-width: 159px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .programs{
+        .program{
+            .top-ar{
+                margin-top: -50px;
+            }
+            
+            .right-ar{
+                margin-top: -65px;
+                transform: translateX(-40px);
+            }
+            .header{
+                margin-top: -30px;
+                h3{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .program-card{
+                flex-direction: column;
+                justify-content: center;
+                .move-icon{
+                    img{
+                        display: none;
+                    }
+                }
+                .main-card{
+                    width: 83%;
+                }
+            }
+        }
+    }
+}
