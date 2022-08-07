@@ -1,0 +1,84 @@
+@import './color';
+
+.ex-navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+    left: auto;
+    right: 0px;
+    padding: 0px 60px;
+    background-color: white;
+    .ex-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // max-width: 90%;
+        padding: 10px 0px;
+        overflow: hidden;
+        margin: 0px;
+        .ex-img{
+            cursor: pointer;
+        }
+        .ex-hire-side{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            ul{
+                display: flex;
+                align-items: center;
+                // justify-content: space-evenl;
+                gap: 60px;
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    color: $dark;
+                    font-weight: 400;
+                }
+            }
+            button{
+                border: none;
+                height: fit-content;
+                padding: 10px 35px;
+                background-color: $red;
+                border-bottom-right-radius: 18px;
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .ex-navbar{
+        .ex-nav{
+            .ex-hire-side{
+                ul{
+                    display: none;
+                }
+                button{
+                    padding: 10px 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .ex-navbar{
+        padding: 0px 30px;
+        .ex-nav{
+            .ex-hire-side{
+                ul{
+                    display: none;
+                }
+                button{
+                    padding: 10px 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import './color';
+
+.talent{
+    padding: 40px 60px;
+    .exp-talent{
+        .sectA{
+            h1{
+                font-size: 40px;
+                color: #161617;
+                width: 40%;
+                font-weight: 600;
+                line-height: 39px;
+                span{
+                    color: $red;
+                }
+            }
+            .flexins{
+                display: flex;
+                align-items: center;
+                .flexin{
+                    display: flex;
+                    position: relative;
+                    // gap: 50px;
+                    justify-content: space-between;
+                    width: 80%;
+                    p{
+                        background-color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        border-radius: 8px;
+                        padding: 15px 25px;
+                        box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+                        color: $dark;
+                    }
+                }
+                img{
+                    transform: translate(20px, -30px);
+                    // position: absolute;
+                    // right: 0;
+                    width: 25%;
+                    // bottom: -50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .talent{
+        .exp-talent{
+            .sectA{
+                .flexins{
+                    .flexin{
+                        width: 100% !important;
+                    }
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

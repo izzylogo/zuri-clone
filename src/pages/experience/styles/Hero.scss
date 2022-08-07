@@ -1,0 +1,195 @@
+@import './color';
+
+.ex-hero{
+    padding: 0px 60px;
+    padding-top: 200px;
+    .exp-hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        .left{
+            width: 100%;
+            position: relative;
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+
+                span{
+                    color: $red;
+                }
+            }
+            img{
+                position: absolute;
+                top: 80px;
+                right: 4%;
+                // margin-left: 405px;
+                margin-top: -30px;
+
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+                color: $dark;
+            }
+            .buttons{
+                display: flex;
+                gap: 15px;
+
+                button{
+                    padding: 10px 25px;
+                    border: none;
+                    border-bottom-right-radius: 10px;
+                    font-size: 16px;
+                    color: white;
+
+                    &:nth-child(1){
+                        background-color: $red;
+                    }
+
+                    &:nth-child(2){
+                        background-color: $dark;
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            max-width: 50%;
+            position: relative;
+            .mii{
+                width: 70%;
+            }
+            .linee{
+                position: absolute;
+                width: 40%;
+                bottom: 10%;
+                left: 70%;
+                // margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ex-hero{
+        .exp-hero{
+            flex-direction: column;
+            .left{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                h1{
+                    z-index: 2;
+                    font-size: 35px;
+                    font-weight: 600;
+    
+                    span{
+                        color: $red;
+                    }
+                }
+                img{
+
+                    position: absolute;
+                    top: 60px;
+                    right: 25%;
+                    // margin-left: 405px;
+                    margin-top: -30px;
+                    z-index: 0;
+    
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $dark;
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    // width: 100%;
+                    justify-content: center;
+                    margin-bottom: 50px;
+    
+                    button{
+                        padding: 10px 25px;
+                        border: none;
+                        border-bottom-right-radius: 10px;
+                        font-size: 16px;
+                        color: white;
+    
+                        &:nth-child(1){
+                            background-color: $red;
+                        }
+    
+                        &:nth-child(2){
+                            background-color: $dark;
+                        }
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+                position: relative;
+                .mii{
+                    width: 80%;
+                }
+                .linee{
+                    display: none;
+                    // justify-content: ce;
+                    align-items: center;
+                    position: absolute;
+                    width: 40%;
+                    bottom: 10%;
+                    left: 70%;
+                    // margin-top: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ex-hero{
+        .exp-hero{
+            .left{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                h1{
+                    z-index: 2;
+                    font-size: 33px;
+                    font-weight: 600;
+                }
+                img{
+                    position: absolute;
+                    top: 60px;
+                    right: 25%;
+                    // margin-left: 405px;
+                    margin-top: 20px;
+                    z-index: 0;
+    
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+                position: relative;
+                .mii{
+                    width: 100%;
+                }
+                .linee{
+                    display: none;
+                }
+            }
+        }
+    }
+}

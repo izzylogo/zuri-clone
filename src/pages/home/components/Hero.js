@@ -13,7 +13,7 @@ const Hero = () => {
             that can help your company achieve their mission-critical <span>projects and goals</span></p>
             <div className="h-buttons">
                 <Link className="b1 button" to='/train'>i'm new to the industry</Link>
-                <Link className="b2 button"  to='/'>i need industry experience</Link>
+                <Link className="b2 button"  to='/experience'>i need industry experience</Link>
             </div>
         </div>
     </div>
