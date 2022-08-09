@@ -17,19 +17,25 @@
             .flexins{
                 display: flex;
                 align-items: center;
+                width: 100%;
                 .flexin{
                     display: flex;
                     position: relative;
-                    // gap: 50px;
+                    // gap: 40px;
                     justify-content: space-between;
-                    width: 80%;
+                    width: 75%;
                     p{
                         background-color: rgb(255, 255, 255);
                         font-size: 16px;
                         border-radius: 8px;
-                        padding: 15px 25px;
+                        padding: 13px 20px;
                         box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
                         color: $dark;
+                        transition: .4s ease;
+
+                        &:hover{
+                            transform: translateY(-14px);
+                        }
                     }
                 }
                 img{
@@ -49,8 +55,15 @@
         .exp-talent{
             .sectA{
                 .flexins{
+                    justify-content: center;
                     .flexin{
                         width: 100% !important;
+                        column-gap: 25px;
+                        p{
+                            text-align: center;
+                            padding: 15px 25px;
+                            font-size: 16px;
+                        }
                     }
                     img{
                         display: none;
@@ -58,5 +71,78 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .talent{
+        .exp-talent{
+            .sectA{
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                h1{
+                    font-size: 30px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .flexins{
+                    .flexin{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        row-gap: 10px;
+                        column-gap: 20px !important;
+                        row-gap: 0px !important;
+                        max-width: 90%;
+                        justify-content: center;
+                        gap: 15px;
+                        p{
+                            width: 80% !important;
+                            text-align: center;
+                            width: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .talent{
+        .exp-talent{
+            .sectA{
+                h1{
+                    margin-top: 50px;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                .flexins{
+                    justify-content: center !important;
+                    .flexin{
+                        display: grid;
+                        column-gap: 40px !important;
+                        row-gap: 0px !important;
+                        width: 70%;
+                        justify-content: center;
+                        // gap: 25px;
+                        p{
+                            text-align: center;
+                            width: 100%;
+                            font-size: 14px;
+                            padding: 20px 25px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 380px) {
+    .talent{
+        padding: 0px 10px;
+        margin-bottom: 30px;
     }
 }

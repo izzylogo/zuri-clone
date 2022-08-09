@@ -71,12 +71,17 @@
     .ex-navbar{
         padding: 0px 30px;
         .ex-nav{
+            .ex-img{
+                img{
+                    width: 120px;
+                }
+            }
             .ex-hire-side{
                 ul{
                     display: none;
                 }
                 button{
-                    padding: 10px 40px;
+                    padding: 8px 20px;
                 }
             }
         }

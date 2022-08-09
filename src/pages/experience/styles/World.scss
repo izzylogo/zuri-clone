@@ -67,7 +67,7 @@
 @media screen and (max-width: 1220px) {
     .world{
         .exp-world{
-            flex-direction: column;
+            // flex-direction: column;
             .left{
                 align-items: center;
                 text-align: center;
@@ -110,6 +110,7 @@
 @media screen and (max-width: 900px) {
     .world{
         .exp-world{
+            flex-direction: column;
             .left{
                 h2{
                     font-size: 35px;
@@ -152,6 +153,7 @@
         .exp-world{
             .left{
                 text-align: left;
+                align-items: flex-start;
                 h2{
                     font-size: 30px;
                     font-weight: 600;
@@ -166,6 +168,7 @@
                 p{
                     font-size: 14px;
                     font-weight: 200;
+                    text-align: left;
                 }
                 .exp-grid{
                     display: flex;

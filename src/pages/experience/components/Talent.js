@@ -28,7 +28,7 @@ const Talent = () => {
                         <p>Reskill Americans</p>
                         <p>Flutterwave</p>
                         <p>Google</p>
-                        <p>Career Transitio</p>
+                        <p>Career Transitionier</p>
                     </div>
                 </div>
             </div>
