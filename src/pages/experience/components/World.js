@@ -9,7 +9,7 @@ import ppl from '../assest/section2.png'
 
 const World = () => {
   return (
-    <div className='world'>
+    <div className='world' id='world'>
         <div className="exp-world">
             <div className="left">
                 <h2>We have impacted the lives of <span>thousands</span> around the world</h2>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import '../styles/Nav.scss'
 import exlogo from '../assest/Explogo2.svg'
 
@@ -11,9 +12,15 @@ const Nav = () => {
             </div>
             <div className="ex-hire-side">
                 <ul>
-                    <li>Home</li>
-                    <li>Impact</li>
-                    <li>Why us</li>
+                    <li>
+                        <Link  activeClass="active" to="home" spy={true} smooth={true}  duration={1200}>Home</Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" to="world" spy={true} smooth={true}  duration={1200}>Impact</Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" to="hire" spy={true} smooth={true}  duration={1200}>Why us</Link>
+                    </li>
                 </ul>
                 <button>Hire talent</button>
             </div>

@@ -6,7 +6,7 @@ import heroImg from '../assest/Exsection1.png'
 
 const Hero = () => {
   return (
-    <div className='ex-hero'>
+    <div className='ex-hero' id='home'>
         <div className="exp-hero">
           <div className="left">
             <h1>Vetted and Trusted <span>talents</span></h1>

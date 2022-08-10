@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/CardsD.scss'
-import cwhi from '../../../assests/curve-white.png'
 
 
 const CardsD = ({num, topic, detail, img, style, text}) => {

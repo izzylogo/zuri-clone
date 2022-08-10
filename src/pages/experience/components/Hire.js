@@ -8,7 +8,7 @@ import many from '../assest/many.svg'
 
 const Hire = () => {
   return (
-    <div className='hire'>
+    <div className='hire' id='hire'>
         <div className="exp-hire">
             <h1>Why Hire our <span> Talents</span></h1>
             <div className="hire-box">

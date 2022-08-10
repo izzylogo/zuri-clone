@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home";
 import Industry from "./pages/industry/Industry";
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Experience from "./pages/experience/Experience";
 
 function App() {
