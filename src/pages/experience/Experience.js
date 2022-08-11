@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Hire from './components/Hire'
@@ -8,9 +8,23 @@ import World from './components/World'
 import './Experience.scss'
 
 const Experience = () => {
+  const [mode, setMode] = useState(false)
+
+  const open = () => {
+    setMode(true)
+  }
+  const close = () => {
+    setMode(false)
+  }
+
   return (
     <div className='experience'>
-        <Nav/>
+        <Nav 
+          mode={mode}
+          setMode={setMode}
+          open={open}
+          close={close}
+        />
         <Hero/>
         <World/>
         <Talent/>
